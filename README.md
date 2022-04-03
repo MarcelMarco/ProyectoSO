@@ -6,7 +6,7 @@ Version 1 verificada por Jordi
 Version 1 Comunicada por Pau     
 URL del video: https://youtu.be/PTjfHizlqpc      
 
-Version 1 generada por Pau                 
-Version 1 verificada por Marcel                
-Version 1 Comunicada por Jordi
+Version 2 generada por Pau                 
+Version 2 verificada por Marcel                
+Version 2 Comunicada por Jordi
 URL del video: https://youtu.be/qneOaoobxrY
