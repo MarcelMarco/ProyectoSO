@@ -18,26 +18,39 @@ typedef struct {
 	int num;
 } ListaPersonas;
 
-ListaPersonas *lista;
+ListaPersonas lista;
 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
-void *AddConectado (ListaPersonas *lista, int x, char usuario[20])
+void AddConectado (ListaPersonas *lista, int x, char usuario[20])
 {
-	for (x=0;x++;lista->personas[x].nombre != NULL)
-		lista->num = x;
+	x = lista->num;
 	strcpy (lista->personas[x].nombre, usuario);
 	lista->num = lista->num + 1;			
 	printf("Nuevo jugador conectado %s\n", lista->personas[x].nombre);
 	printf("Numero de jugadores conectados : %d\n", lista->num);
 }
 
-void ListaConectados (ListaPersonas *lista, char frase[100], char nombre[20], int cant, int x)
+void EliminarConectado (ListaPersonas *lista, char usuario[20])
 {
-	printf("Inicio de la ListaConectados");
-	if (lista->num = 1)
-		strcpy  (frase, lista->personas[0].nombre);
-	else
+	for (int i=0; i<lista->num; i++)
+	{
+		if (lista->personas[i].nombre == usuario)
+			strcpy (lista->personas[i].nombre, lista->personas[i+1].nombre);			
+		else
+			strcpy (lista->personas[i].nombre, lista->personas[i].nombre);
+	}	
+	lista->num++;
+}
+
+void ListaConectados (ListaPersonas *lista, char frase[100], char nombre[20], int cant)
+{
+	printf("Inicio de la ListaConectados\n");
+	if (lista->num == 1)
+	{
+		strcpy (frase, lista->personas[0].nombre);
+	}
+	else if (lista->num > 1)
 	{
 		strcpy  (frase, lista->personas[0].nombre);
 		while(cant < lista->num)
@@ -46,7 +59,11 @@ void ListaConectados (ListaPersonas *lista, char frase[100], char nombre[20], in
 			strcat (frase, nombre);
 			cant++;
 		}
-	}	
+	}
+	else if (lista->num == 0)
+	{
+		strcpy (frase, "Ninguno");
+	}
 }
 
 
@@ -73,7 +90,7 @@ void *AtenderCliente (void *socket)
 	}
 	
 	//inicializar la conexion
-	conn = mysql_real_connect (conn, "localhost","root", "mysql", "Juego",0, NULL, 0);
+	conn = mysql_real_connect (conn, "shiva2.upc.es","root", "mysql", "M4_JuegoPóker",0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexi??n: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -139,12 +156,6 @@ void *AtenderCliente (void *socket)
 			p = strtok( NULL, "/");				
 			strcpy (contra, p);				
 			printf ("Codigo: %d, Usuario: %s, Contraseña: %s\n", codigo, usuario, contra);
-/*			for (x=0;x++;lista->personas[x].nombre != NULL)*/
-/*				lista->num = x;*/
-/*			strcpy (lista->personas[x].nombre, usuario);*/
-/*			lista->num = lista->num + 1;			*/
-/*			printf("Nuevo jugador conectado %s\n", lista->personas[x].nombre);*/
-/*			printf("Numero de jugadores conectados : %d\n", lista->num);*/
 			AddConectado(&lista, x, usuario);
 		}			
 		else if ((codigo ==3) || (codigo ==4) || (codigo ==5) || (codigo ==6))
@@ -157,12 +168,12 @@ void *AtenderCliente (void *socket)
 		
 		int totalj;
 		char totaljug[2];
-		char sql[100];	
-		char *name[20];
-		char *frase[100];
-		int cant=1;
+		char sql[100];
 		if (codigo ==0)
+		{
 			terminar=1;
+			EliminarConectado (&lista, usuario);
+		}			
 		else if (codigo ==1) 
 		{
 			strcpy (sql, "SELECT Jugador.Identificador FROM (Jugador,Partida,Relacion) WHERE Jugador.Nombre = '");
@@ -201,8 +212,7 @@ void *AtenderCliente (void *socket)
 			strcpy (respuesta,"Correcto");
 		}
 		else if (codigo ==3)
-		{
-			
+		{			
 			strcpy (sql, "SELECT Relacion.Puntos FROM (Jugador,Partida,Relacion) WHERE Jugador.Nombre = '");
 			strcat (sql, consulta);
 			strcat (sql, "' AND Relacion.idJugador = Jugador.Identificador");
@@ -232,24 +242,11 @@ void *AtenderCliente (void *socket)
 		}
 		else if (codigo ==6)
 		{
-/*			char *nombre[20];*/
-/*			char *frase[100];*/
-/*			int cant=1;*/
-/*			printf("%s\n",lista->personas[0].nombre);*/
-/*			if (lista->num = 1)*/
-/*				strcpy  (frase, lista->personas[0].nombre);*/
-/*			else*/
-/*			{*/
-/*				strcpy  (frase, lista->personas[0].nombre);*/
-/*				while(cant < lista->num)*/
-/*				{*/
-/*					sprintf (nombre,"/%s",lista->personas[cant].nombre);*/
-/*					strcat (frase, nombre);*/
-/*					cant++;*/
-/*				}*/
-/*			}*/
-			ListaConectados (&lista, *frase, *name, cant, x);
-			strcpy (respuesta, *frase);
+			char name[20];
+			char frase[100];
+			int cant=1;
+			ListaConectados (&lista, frase, name, cant);
+			strcpy (respuesta, frase);
 		}
 		if (codigo !=0)
 		{				
@@ -270,14 +267,14 @@ void *AtenderCliente (void *socket)
 
 int main(int argc, char *argv[])
 {
-	
-	
 	int sock_conn, sock_listen, ret;
 	struct sockaddr_in serv_adr;
 	char peticion[512];
 	char respuesta[512];
+	int puerto = 50010;
 	// INICIALITZACIONS
 	// Obrim el socket
+	lista.num =0;
 	if ((sock_listen = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 		printf("Error creant socket");
 	// Fem el bind al port
@@ -289,7 +286,7 @@ int main(int argc, char *argv[])
 	//htonl formatea el numero que recibe al formato necesario
 	serv_adr.sin_addr.s_addr = htonl(INADDR_ANY);
 	// establecemos el puerto de escucha
-	serv_adr.sin_port = htons(9020);
+	serv_adr.sin_port = htons(puerto);
 	if (bind(sock_listen, (struct sockaddr *) &serv_adr, sizeof(serv_adr)) < 0)
 		printf ("Error al bind");
 	
