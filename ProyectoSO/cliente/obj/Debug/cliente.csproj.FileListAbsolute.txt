@@ -9,3 +9,46 @@ C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\Proyec
 C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
 C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO\ProyectoSO\cliente\obj\Debug\cliente.exe
 C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\share\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csprojAssemblyReference.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\marsh\OneDrive\Documentos\Universitat\2n Curs\2n Quatrimestre\SO\ProyectoSO_Trabajo_2\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.pdb
