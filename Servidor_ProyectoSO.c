@@ -8,7 +8,8 @@
 #include <ctype.h>
 #include <mysql.h>
 #include <pthread.h>
-
+#include <time.h>
+//Personas
 typedef struct{
 	char nombre[20];	
 } Persona;
@@ -17,10 +18,38 @@ typedef struct {
 	Persona personas[100];
 	int num;
 } ListaPersonas;
-
+char Conectados[200];
 ListaPersonas lista;
 
+//Cartas
+typedef struct{
+	int palo; //Corazones,picas,treboles o diamantes
+	int valor; //Numero de la carta 10, 4, As... (2=2) (J=10) ect... 
+}Carta;
+
+typedef struct{
+	Carta cartas[200];
+	int num;
+} ListaCartas;
+
+void DameCartas(ListaPersonas *lista, ListaCartas *listaC )
+{
+	int i = 0; //Primero tenemos que ver cuantoa jugadores tenemos para posteriormente repartir cartas
+	//las 5 primeras cartas son de la mesa siempr
+	
+	srand(time(NULL));
+	
+	//while (i < ListaPersonas->num)
+/*	{*/
+/*		listaC->cartas[i].valor = rand()%14; *///es 1 mï¿½s del nï¿½mero que queremos generar
+/*		listaC->cartas[i].palo = rand()%5;*/
+/*		if (listaC*/
+/*		i++;*/
+/*	}*/
+}
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+//void DameCartas(
 
 void AddConectado (ListaPersonas *lista, int x, char usuario[20])
 {
@@ -40,30 +69,31 @@ void EliminarConectado (ListaPersonas *lista, char usuario[20])
 		else
 			strcpy (lista->personas[i].nombre, lista->personas[i].nombre);
 	}	
-	lista->num++;
+	lista->num--;
 }
 
-void ListaConectados (ListaPersonas *lista, char frase[100], char nombre[20], int cant)
+void ListaConectados (ListaPersonas *lista, char Conectados[100], char nombre[20], int cant)
 {
 	printf("Inicio de la ListaConectados\n");
 	if (lista->num == 1)
 	{
-		strcpy (frase, lista->personas[0].nombre);
+		strcpy (Conectados, lista->personas[0].nombre);
 	}
 	else if (lista->num > 1)
 	{
-		strcpy  (frase, lista->personas[0].nombre);
+		strcpy  (Conectados, lista->personas[0].nombre);
 		while(cant < lista->num)
 		{
 			sprintf (nombre,"/%s",lista->personas[cant].nombre);
-			strcat (frase, nombre);
+			strcat (Conectados, nombre);
 			cant++;
 		}
 	}
 	else if (lista->num == 0)
 	{
-		strcpy (frase, "Ninguno");
+		strcpy (Conectados, "Ninguno");
 	}
+	
 }
 
 
@@ -90,7 +120,7 @@ void *AtenderCliente (void *socket)
 	}
 	
 	//inicializar la conexion
-	conn = mysql_real_connect (conn, "shiva2.upc.es","root", "mysql", "M4_JuegoPóker",0, NULL, 0);
+	conn = mysql_real_connect (conn, "localhost","root", "mysql", "Juego",0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexi??n: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -155,10 +185,10 @@ void *AtenderCliente (void *socket)
 			strcpy (usuario, p);
 			p = strtok( NULL, "/");				
 			strcpy (contra, p);				
-			printf ("Codigo: %d, Usuario: %s, Contraseña: %s\n", codigo, usuario, contra);
+			printf ("Codigo: %d, Usuario: %s, Contraseï¿½a: %s\n", codigo, usuario, contra);
 			AddConectado(&lista, x, usuario);
 		}			
-		else if ((codigo ==3) || (codigo ==4) || (codigo ==5) || (codigo ==6))
+		else if ((codigo ==3) || (codigo ==4) || (codigo ==5) || (codigo ==6)|| (codigo ==7))
 		{
 			p = strtok( NULL, "/");				
 			strcpy (consulta, p);
@@ -178,17 +208,17 @@ void *AtenderCliente (void *socket)
 		{
 			strcpy (sql, "SELECT Jugador.Identificador FROM (Jugador,Partida,Relacion) WHERE Jugador.Nombre = '");
 			strcat (sql, usuario); 
-			strcat (sql, "' AND Jugador.Contraseña = '");
+			strcat (sql, "' AND Jugador.Contraseï¿½a = '");
 			strcat (sql, contra); 
 			strcat (sql, "'");
 			mysql_query (conn, sql);
 			resultado = mysql_store_result (conn); 
 			row = mysql_fetch_row (resultado);
 			if (row == NULL)
-				strcpy (respuesta,"Incorrecto");
+				sprintf(respuesta,"1/Incorrecto");
 			else
 			{
-				strcpy (respuesta,"Correcto");
+				sprintf(respuesta,"1/Correcto");
 			}				
 		}
 		else if (codigo ==2)
@@ -209,7 +239,7 @@ void *AtenderCliente (void *socket)
 			strcat (sql, contra); 
 			strcat (sql, "')");
 			mysql_query (conn, sql);
-			strcpy (respuesta,"Correcto");
+			strcpy (respuesta,"2/Correcto");
 		}
 		else if (codigo ==3)
 		{			
@@ -219,7 +249,7 @@ void *AtenderCliente (void *socket)
 			mysql_query (conn, sql);
 			resultado = mysql_store_result (conn); 
 			row = mysql_fetch_row (resultado);
-			strcpy(respuesta, row[0]);			
+			sprintf(respuesta,"3/%s",row[0]);			
 		}
 		else if (codigo ==4)
 		{
@@ -228,7 +258,7 @@ void *AtenderCliente (void *socket)
 			mysql_query (conn, sql);
 			resultado = mysql_store_result (conn); 
 			row = mysql_fetch_row (resultado);
-			strcpy(respuesta, row[0]);
+			sprintf(respuesta, "4/%s",row[0]);
 		}
 		else if (codigo ==5)
 		{
@@ -238,15 +268,44 @@ void *AtenderCliente (void *socket)
 			mysql_query (conn, sql);
 			resultado = mysql_store_result (conn); 
 			row = mysql_fetch_row (resultado);
-			strcpy(respuesta, row[0]);
+			sprintf(respuesta, "5/%s",row[0]);
 		}
 		else if (codigo ==6)
 		{
 			char name[20];
-			char frase[100];
+			char Conectados[100]; //Se guarda un string con todos los conectados
 			int cant=1;
-			ListaConectados (&lista, frase, name, cant);
-			strcpy (respuesta, frase);
+			ListaConectados (&lista, Conectados, name, cant);
+			//sprintf(respuesta, "6/%s",Conectados);
+			sprintf(respuesta,"6/%s", Conectados);
+		}
+		else if (codigo =7) //quiero invitar a alguien
+			//Cabe recalcar que vendran varios nombres separados por /
+			//por ejemplo 7/Pedro/Maria quiere decir que quiere invitar a pedro y a Maria
+		{
+			char nombre2[20];
+			int encontrado = 0;
+			char *p = strtok(Conectados, "/");
+			strcpy(nombre2, p);
+			if(strcmp(consulta, nombre2)==0)
+			{
+				printf("El jugador %s estï¿½ conectado",nombre);
+			}
+			
+			while ((p != NULL) && (encontrado == 0));
+			{ 
+				p = strtok(Conectados, "/");
+				strcpy(nombre2, p);
+				if(strcmp(consulta, nombre2)==0)
+				{
+					printf("El jugador %s estï¿½ conectado",nombre);
+					encontrado = 1;
+				}
+			}
+			if (encontrado == 0)
+			{
+				printf("Jugador no encontrado");
+			}
 		}
 		if (codigo !=0)
 		{				
@@ -271,7 +330,8 @@ int main(int argc, char *argv[])
 	struct sockaddr_in serv_adr;
 	char peticion[512];
 	char respuesta[512];
-	int puerto = 50010;
+	int puerto = 9010;
+	 //Iniciamos con todos los jugadores desconectados
 	// INICIALITZACIONS
 	// Obrim el socket
 	lista.num =0;

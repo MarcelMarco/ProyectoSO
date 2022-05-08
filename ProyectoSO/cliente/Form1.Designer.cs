@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Consultas = new System.Windows.Forms.GroupBox();
+            this.Conectados = new System.Windows.Forms.RadioButton();
             this.Ganador = new System.Windows.Forms.RadioButton();
             this.Fecha = new System.Windows.Forms.RadioButton();
             this.Puntos = new System.Windows.Forms.RadioButton();
@@ -44,11 +45,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.Consultas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -135,6 +135,7 @@
             // Consultas
             // 
             this.Consultas.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.Consultas.Controls.Add(this.Conectados);
             this.Consultas.Controls.Add(this.Ganador);
             this.Consultas.Controls.Add(this.Fecha);
             this.Consultas.Controls.Add(this.Puntos);
@@ -144,16 +145,27 @@
             this.Consultas.Controls.Add(this.textBox1);
             this.Consultas.Location = new System.Drawing.Point(588, 34);
             this.Consultas.Name = "Consultas";
-            this.Consultas.Size = new System.Drawing.Size(365, 214);
+            this.Consultas.Size = new System.Drawing.Size(365, 243);
             this.Consultas.TabIndex = 1;
             this.Consultas.TabStop = false;
             this.Consultas.Text = "Consultas";
             this.Consultas.Visible = false;
             // 
+            // Conectados
+            // 
+            this.Conectados.AutoSize = true;
+            this.Conectados.Location = new System.Drawing.Point(24, 167);
+            this.Conectados.Name = "Conectados";
+            this.Conectados.Size = new System.Drawing.Size(199, 24);
+            this.Conectados.TabIndex = 7;
+            this.Conectados.TabStop = true;
+            this.Conectados.Text = "Jugadores Conectados";
+            this.Conectados.UseVisualStyleBackColor = true;
+            // 
             // Ganador
             // 
             this.Ganador.AutoSize = true;
-            this.Ganador.Location = new System.Drawing.Point(24, 134);
+            this.Ganador.Location = new System.Drawing.Point(24, 132);
             this.Ganador.Name = "Ganador";
             this.Ganador.Size = new System.Drawing.Size(203, 24);
             this.Ganador.TabIndex = 5;
@@ -185,7 +197,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(24, 172);
+            this.button4.Location = new System.Drawing.Point(24, 201);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(311, 36);
             this.button4.TabIndex = 6;
@@ -214,38 +226,16 @@
             this.textBox1.Size = new System.Drawing.Size(99, 26);
             this.textBox1.TabIndex = 3;
             // 
-            // button2
+            // dataGridView1
             // 
-            this.button2.Location = new System.Drawing.Point(58, 486);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 48);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Conexión";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(58, 553);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Desconexión";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(54, 431);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(283, 37);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Acceso al Servidor";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(588, 283);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(365, 319);
+            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.Visible = false;
             // 
             // Form1
             // 
@@ -254,21 +244,19 @@
             this.BackgroundImage = global::cliente.Properties.Resources.poker;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(985, 662);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Consultas);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.Consultas.ResumeLayout(false);
             this.Consultas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -286,13 +274,12 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RadioButton Ganador;
         private System.Windows.Forms.RadioButton Fecha;
         private System.Windows.Forms.RadioButton Puntos;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton Conectados;
     }
 }
 
