@@ -46,9 +46,20 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Partida_Btn = new System.Windows.Forms.Button();
+            this.prueba = new System.Windows.Forms.Label();
+            this.Notificaciones = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Rechazar = new System.Windows.Forms.Button();
+            this.Aceptar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Tablero = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.Consultas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Notificaciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tablero)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -237,13 +248,110 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.Visible = false;
             // 
+            // Partida_Btn
+            // 
+            this.Partida_Btn.Location = new System.Drawing.Point(78, 444);
+            this.Partida_Btn.Name = "Partida_Btn";
+            this.Partida_Btn.Size = new System.Drawing.Size(126, 53);
+            this.Partida_Btn.TabIndex = 6;
+            this.Partida_Btn.Text = "Iniciar";
+            this.Partida_Btn.UseVisualStyleBackColor = true;
+            this.Partida_Btn.Click += new System.EventHandler(this.Partida_Btn_Click);
+            // 
+            // prueba
+            // 
+            this.prueba.Location = new System.Drawing.Point(315, 294);
+            this.prueba.Name = "prueba";
+            this.prueba.Size = new System.Drawing.Size(250, 83);
+            this.prueba.TabIndex = 7;
+            this.prueba.Click += new System.EventHandler(this.prueba_Click);
+            // 
+            // Notificaciones
+            // 
+            this.Notificaciones.Controls.Add(this.button2);
+            this.Notificaciones.Controls.Add(this.textBox4);
+            this.Notificaciones.Controls.Add(this.Rechazar);
+            this.Notificaciones.Controls.Add(this.Aceptar);
+            this.Notificaciones.Controls.Add(this.label3);
+            this.Notificaciones.Location = new System.Drawing.Point(60, 261);
+            this.Notificaciones.Name = "Notificaciones";
+            this.Notificaciones.Size = new System.Drawing.Size(228, 155);
+            this.Notificaciones.TabIndex = 8;
+            this.Notificaciones.TabStop = false;
+            this.Notificaciones.Text = "Centro de Notificaciones";
+            this.Notificaciones.Visible = false;
+            this.Notificaciones.Enter += new System.EventHandler(this.Notificaciones_Enter);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(132, 25);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 36);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Enviar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(6, 30);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 26);
+            this.textBox4.TabIndex = 8;
+            // 
+            // Rechazar
+            // 
+            this.Rechazar.Location = new System.Drawing.Point(110, 110);
+            this.Rechazar.Name = "Rechazar";
+            this.Rechazar.Size = new System.Drawing.Size(97, 39);
+            this.Rechazar.TabIndex = 7;
+            this.Rechazar.Text = "Rechazar";
+            this.Rechazar.UseVisualStyleBackColor = true;
+            this.Rechazar.Visible = false;
+            this.Rechazar.Click += new System.EventHandler(this.Rechazar_Click);
+            // 
+            // Aceptar
+            // 
+            this.Aceptar.Location = new System.Drawing.Point(13, 110);
+            this.Aceptar.Name = "Aceptar";
+            this.Aceptar.Size = new System.Drawing.Size(91, 39);
+            this.Aceptar.TabIndex = 7;
+            this.Aceptar.Text = "Aceptar";
+            this.Aceptar.UseVisualStyleBackColor = true;
+            this.Aceptar.Visible = false;
+            this.Aceptar.Click += new System.EventHandler(this.Aceptar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = " ";
+            // 
+            // Tablero
+            // 
+            this.Tablero.Image = global::cliente.Properties.Resources.poker_mesas_anonimas;
+            this.Tablero.Location = new System.Drawing.Point(58, 515);
+            this.Tablero.Name = "Tablero";
+            this.Tablero.Size = new System.Drawing.Size(375, 229);
+            this.Tablero.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Tablero.TabIndex = 9;
+            this.Tablero.TabStop = false;
+            this.Tablero.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::cliente.Properties.Resources.poker;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(985, 662);
+            this.ClientSize = new System.Drawing.Size(1114, 805);
+            this.Controls.Add(this.Tablero);
+            this.Controls.Add(this.Notificaciones);
+            this.Controls.Add(this.prueba);
+            this.Controls.Add(this.Partida_Btn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Consultas);
             this.Controls.Add(this.groupBox1);
@@ -256,6 +364,9 @@
             this.Consultas.ResumeLayout(false);
             this.Consultas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Notificaciones.ResumeLayout(false);
+            this.Notificaciones.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tablero)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,6 +391,15 @@
         private System.Windows.Forms.RadioButton Puntos;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RadioButton Conectados;
+        private System.Windows.Forms.Button Partida_Btn;
+        private System.Windows.Forms.Label prueba;
+        private System.Windows.Forms.GroupBox Notificaciones;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button Rechazar;
+        private System.Windows.Forms.Button Aceptar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox Tablero;
     }
 }
 
