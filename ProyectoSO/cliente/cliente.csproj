@@ -52,10 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +91,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\poker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klipartz.com %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poker-7174110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poker-gbe2d5dcc4_1920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-4815934.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-4815934_1920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-4815934_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-4815934_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-4815891_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klipartz.com %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poker-mesas-anonimas.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
