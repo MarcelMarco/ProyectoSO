@@ -1,0 +1,41 @@
+DROP DATABASE IF EXISTS M4_Juego;
+CREATE DATABASE M4_Juego;
+
+USE M4_Juego;
+
+CREATE TABLE Jugador(
+	Identificador INTEGER PRIMARY KEY NOT NULL,
+	Nombre TEXT NOT NULL,
+	Contrasena TEXT NOT NULL
+)ENGINE = InnoDB;
+
+CREATE TABLE Partida(
+	Identificador INTEGER PRIMARY KEY NOT NULL,
+	Fecha TEXT NOT NULL
+)ENGINE = InnoDB;
+
+CREATE TABLE Relacion (
+	idJugador INTEGER NOT NULL,
+	idPartida INTEGER NOT NULL,
+	Puntos INTEGER NOT NULL,
+	FOREIGN KEY (idJugador) REFERENCES Jugador(Identificador),
+	FOREIGN KEY (idPartida) REFERENCES Partida(Identificador)
+)ENGINE = InnoDB;
+
+
+INSERT INTO Jugador VALUES(1,'Juan','Juan123');
+INSERT INTO Jugador VALUES(2,'Pedro','Pedro123');
+INSERT INTO Jugador VALUES(3,'Maria','Maria123');
+INSERT INTO Jugador VALUES(4,'a','a');
+INSERT INTO Jugador VALUES(5,'b','b');
+INSERT INTO Jugador VALUES(6,'Marcel','Marcel');
+
+INSERT INTO Partida VALUES(1,'08/02/2020');
+INSERT INTO Partida VALUES(2,'13/02/2020');
+
+INSERT INTO Relacion VALUES(1,1,3);
+INSERT INTO Relacion VALUES(2,1,1);
+INSERT INTO Relacion VALUES(3,1,0);
+INSERT INTO Relacion VALUES(1,2,0);
+INSERT INTO Relacion VALUES(2,2,3);
+INSERT INTO Relacion VALUES(3,2,1);

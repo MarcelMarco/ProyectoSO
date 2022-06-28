@@ -42,3 +42,70 @@ C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 
 C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.exe
 C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.pdb
 C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Trabajo\ProyectoSO\cliente\obj\Debug\cliente.Form2.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.csprojAssemblyReference.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.Form2.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\34615\Desktop\2n any 2n quatrimestre\SO\Proyector Grupo POKER\versión 4\ProyectoSO_Cartas\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.Desarroladores.resources
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.Reglas.resources
+C:\share\ProyectoSO_Ultimo\ProyectoSO\cliente\obj\Debug\cliente.Partida.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.Desarroladores.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.Partida.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.Reglas.resources
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\pauga\Desktop\ProyectoSO_ultimaversion\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Desarroladores.resources
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Partida.resources
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Reglas.resources
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\share\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.pdb
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.exe.config
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.exe
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\bin\Debug\cliente.pdb
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.AssemblyReference.cache
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.SuggestedBindingRedirects.cache
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Desarroladores.resources
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Form1.resources
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Partida.resources
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Properties.Resources.resources
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.Reglas.resources
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.GenerateResource.cache
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.csproj.CoreCompileInputs.cache
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.exe
+C:\Users\pauga\Desktop\ProyectoSO_Final\ProyectoSO\cliente\obj\Debug\cliente.pdb

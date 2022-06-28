@@ -58,13 +58,34 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Partida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partida.Designer.cs">
+      <DependentUpon>Partida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desarroladores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desarroladores.Designer.cs">
+      <DependentUpon>Desarroladores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reglas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reglas.Designer.cs">
+      <DependentUpon>Reglas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Desarroladores.resx">
+      <DependentUpon>Desarroladores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Partida.resx">
+      <DependentUpon>Partida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +97,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reglas.resx">
+      <DependentUpon>Reglas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,6 +145,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\poker-mesas-anonimas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240440766_383437990107699_4365728677211169582_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73431881_184587099401815_4463039914766121940_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155464777_198379208822715_4687668536004044289_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ranking-manos-poker_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
