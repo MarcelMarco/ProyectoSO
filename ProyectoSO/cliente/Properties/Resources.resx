@@ -118,7 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="poker-mesas-anonimas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poker-mesas-anonimas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casino-4815934" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casino-4815934.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poker-gbe2d5dcc4_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poker-gbe2d5dcc4_1920.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casino-4815934_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casino-4815934_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poker-7174110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poker-7174110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="klipartz.com (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\klipartz.com (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="poker" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\poker.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="155464777_198379208822715_4687668536004044289_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\155464777_198379208822715_4687668536004044289_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casino-4815934_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casino-4815934_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="73431881_184587099401815_4463039914766121940_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\73431881_184587099401815_4463039914766121940_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="240440766_383437990107699_4365728677211169582_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\240440766_383437990107699_4365728677211169582_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casino-4815934_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casino-4815934_640.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="klipartz.com (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\klipartz.com (27).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casino-4815891_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casino-4815891_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ranking-manos-poker_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ranking-manos-poker_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
