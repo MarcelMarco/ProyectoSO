@@ -25,3 +25,6 @@ Version 5 generada por Pau
 Version 5 verificada por Marcel                                 
 Version 5 Comunicada por Jordi                         
 URL del video: https://youtu.be/LhnpEXCzn0c
+ 
+Entrega Final Realizada                             
+URL del video Presentacion: https://youtu.be/tdRzjwtLtZ0                     
